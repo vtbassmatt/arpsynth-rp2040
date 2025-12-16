@@ -1,0 +1,9 @@
+[project]
+name = "eighties-arp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "circup>=2.3.0",
+]
