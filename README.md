@@ -30,3 +30,11 @@ Initially I copied the wiring from ["eighties_arp"](https://github.com/todbot/ci
   - GND and SCK to ground
   - VIN to 3.3V
 5. NeoPixel Strand's middle wire is connected to GP0. GND is obviously to ground, and power needs to be 5V.
+
+## To see the UI
+
+If you've connected the board to a Mac or Linux laptop, you can use `screen` to see some neat UI.
+
+1. Run `ls /dev/tty.*` and figure out which TTY is the serial console for your board.
+2. Run `screen /dev/tty.usbmodem101 115200` where `tty.usbmodem101` is the TTY you figured out in step 1. (115200 is the baud rate, which could be different if you bought a different RPi board. This value is correct for my RP2040-Tiny.)
+3. You may have to reload/refresh the code after starting up the `screen` session in order to see anything.
